@@ -1,0 +1,3 @@
+
+if(stri):
+    print("hello")

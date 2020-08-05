@@ -1,0 +1,30 @@
+file_obj=open("lak2.txt",'w')
+print("Writing in a file:")
+file_obj.write("Hello! My name is Lakshay Dhingra.\n")
+file_obj.write("I am from Rohtak.\n")
+file_obj.write("I am pursuing Bachelor in Computer Science Engineering.\n")
+file_obj.close()
+print()
+
+file_obj=open("lak2.txt",'a')
+print("Writing in a file again:")
+li=["I love mango fruit.\n","Apple is also my favourite.","Orange is good though."]
+file_obj.writelines(li)
+file_obj.close()
+print()
+
+print("Reading the file:")
+file_obj=open("lak2.txt",'r')
+print(file_obj.read())
+file_obj.close()
+print()
+
+print("Opening the file in write mode clears its contents...")
+file_obj=open("lak2.txt",'w')
+file_obj.close()
+print()
+
+print("Reading the file:")
+file_obj=open("lak2.txt",'r')
+print(file_obj.read())
+file_obj.close()
